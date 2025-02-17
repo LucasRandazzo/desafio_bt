@@ -1,0 +1,14 @@
+ERROR:ssl_client_socket_impl.cc(876)] handshake failed; returned -1, SSL error code 1, net_error -101
+
+Site do reclame aqui demora muito para carregar completamente, forçar ir mais rápido?
+Melhor usar class name ou xpath, ou css selector?
+Valeria a pena usar classes auxiliares, melhores_empresas, piores_empresas?
+
+Captcha aparece quando clico na empresa para ver informaçoes adicionais
+- Possiveis soluções
+* Usar um serviço de solucionar captcha (complexo, pode não funcionar) X
+* Captar todos os endereços que preciso ir, fechar o navegador e abrir cada um iterativamente, sempre que terminar de captar as informaçoes
+de cada um fechar o navegador para garantir que não irá aparecer o captcha. V
+
+Muito lento, multiplas threads? Acaba ocorrendo novamente o teste de captcha.
+Lento, porém eficiente

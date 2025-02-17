@@ -20,7 +20,7 @@ class Empresa:
         self.notaConsumidor = notaConsumidor
 
 
-planilha = pd.DataFrame(columns=['Categoria', 'Empresa', 'Nota', 'Reclamacoes Respondidas', 'Nota Consumidor', 'Voltariam Fazer Negocio', 'Indice Solucao'])
+planilha = pd.DataFrame(columns=['Categoria', 'Empresa', 'Reclamacoes Respondidas', 'Nota Consumidor', 'Voltariam Fazer Negocio', 'Indice Solucao'])
 novas_linhas = []        
 lista_url_empresas = []      
 navegador = webdriver.Chrome()

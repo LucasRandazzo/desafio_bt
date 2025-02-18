@@ -28,7 +28,7 @@ Esse projeto realiza uma raspagem de dados para extrair dados das melhores e pio
 1. Primeiro, clone o repositório:
 
     ```bash
-    https://github.com/LucasRandazzo/desafio_bt
+    git clone https://github.com/LucasRandazzo/desafio_bt
     ```
 ### Ambiente virtual
 
@@ -57,7 +57,14 @@ Esse projeto realiza uma raspagem de dados para extrair dados das melhores e pio
     pip install -r requirements.txt
     ```
 5. Execute o programa
-- Substitua N pelo número de categorias do ramo da moda a serem analisadas (1 a 16. Valor default: 1)
-    ```bash
+- Substitua N pelo número de categorias do ramo da moda a serem analisadas (1 a 16).
+
+  ```bash
     python main.py --total_categorias N
     ```
+- Ou (número de categorias default: 1)
+
+  ```bash
+    python main.py
+    ```
+    

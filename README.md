@@ -12,7 +12,17 @@ Esse projeto realiza uma raspagem de dados para extrair dados das melhores e pio
 -  **Exportação:**
    - Gera um arquivo `dados_empresas.xlsx` com as informações coletadas.
 
-# Resultados
+## Resultados
+### 1 Categoria Analisada (Default)
+
+![planilha1](imgs/planilha1.PNG)
+
+### 16 Categorias Analisadas (Máximo)
+![planilha2](imgs/planilha2.PNG)
+![planilha3](imgs/planilha3.PNG)
+![planilha4](imgs/planilha4.PNG)
+
+
 
 ## Desenvolvimento e Tecnologias
 - [Selenium](https://selenium-python.readthedocs.io/)

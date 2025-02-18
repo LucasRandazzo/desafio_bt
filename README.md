@@ -10,7 +10,7 @@ Esse projeto realiza uma raspagem de dados para extrair dados das melhores e pio
   - Navega até a url de cada empresa
   - Extrai percentuais de "reclamações respondidas", "voltariam a fazer negócio", "índice de solução" e "nota do consumidor"
 -  **Exportação:**
-  - Gera um arquivo `dados_empresas.xlsx` com as informações coletadas.
+   - Gera um arquivo `dados_empresas.xlsx` com as informações coletadas.
 
 # Resultados
 

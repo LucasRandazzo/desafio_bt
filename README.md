@@ -13,7 +13,7 @@ Esse projeto realiza uma raspagem de dados para extrair dados das melhores e pio
    - Gera um arquivo `dados_empresas.xlsx` com as informações coletadas.
 
 ## Resultados
-### 1 Categoria Analisada (Default)
+### Uma Categoria Analisada (Default)
 
 ![planilha1](imgs/planilha1.PNG)
 

@@ -1,8 +1,8 @@
-#Desafio Blue Tape
+# Desafio Blue Tape
 
 Esse projeto realiza uma raspagem de dados para extrair dados das melhores e piores empresas do Reclame Aqui no ramo da moda.
 
-##Funcionalidades
+## Funcionalidades
 - **Definir Quantidade de Categorias:** Usuário define no momento da execução a quantidade de categorias do ramo da moda a serem analisadas.
 - **Extraçao de dados:**
   - Navega até a página do Reclame Aqui 
@@ -12,9 +12,9 @@ Esse projeto realiza uma raspagem de dados para extrair dados das melhores e pio
 -  **Exportação:**
   - Gera um arquivo `dados_empresas.xlsx` com as informações coletadas.
 
-#Resultados
+# Resultados
 
-##Desenvolvimento e Tecnologias
+## Desenvolvimento e Tecnologias
 - [Selenium](https://selenium-python.readthedocs.io/)
   - Selenium foi utilizado para automatizar a interação com páginas web, permitindo navegar, clicar em elementos e extrair informações. Essa automação é essencial para simular o comportamento de um usuário e coletar dados diretamente de sites.
 - [Pandas](https://pandas.pydata.org/docs/)

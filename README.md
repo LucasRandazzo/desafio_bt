@@ -57,14 +57,14 @@ Esse projeto realiza uma raspagem de dados para extrair dados das melhores e pio
     pip install -r requirements.txt
     ```
 5. Execute o programa
-- Substitua N pelo número de categorias do ramo da moda a serem analisadas (1 a 16).
+   - Substitua N pelo número de categorias do ramo da moda a serem analisadas (1 a 16).
 
-  ```bash
+    ```bash
     python main.py --total_categorias N
     ```
-- Ou (número de categorias default: 1)
+   - Ou (número de categorias default: 1)
 
-  ```bash
+    ```bash
     python main.py
     ```
     

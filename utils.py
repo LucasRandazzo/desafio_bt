@@ -48,8 +48,9 @@ def coletar_dados_empresas_inicial(navegador, total_categorias):
         categoria_atual = lista_categoria_moda[i]
         espera.until(EC.visibility_of(categoria_atual))
         botao_categoria = categoria_atual.find_element(By.TAG_NAME, "button")
-        navegador.execute_script("arguments[0].scrollIntoView({block: 'center'})", botao_categoria)
         espera.until(EC.element_to_be_clickable(botao_categoria))
+        navegador.execute_script("arguments[0].scrollIntoView({block: 'center'})", botao_categoria)
+        
         botao_categoria.click()
         categoria_nome = botao_categoria.text
 

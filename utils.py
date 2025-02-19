@@ -34,7 +34,7 @@ def obter_total_categorias():
     args = parser.parse_args()
     return args.total_categorias
 
-def coletar_dados_empresas_inicial(navegador):
+def coletar_dados_empresas_inicial(navegador, total_categorias):
     lista_empresas = []
     espera = WebDriverWait(navegador, 3)
 
@@ -42,7 +42,6 @@ def coletar_dados_empresas_inicial(navegador):
     botao_melhores = navegador.find_element(By.CSS_SELECTOR, "[data-testid='tab-best']")
 
     clicar_seletor_categorias(navegador)
-    total_categorias = obter_total_categorias()
 
     for i in range(total_categorias):
         lista_categoria_moda = navegador.find_elements(By.XPATH, "//span[@title='Moda']/following-sibling::ul[1]/li")
@@ -91,8 +90,7 @@ def coletar_dados_empresas_inicial(navegador):
                 if k == len(ranking_piores) - 1:
                     botao_melhores.click()
 
-        if i != total_categorias - 1:
-            clicar_seletor_categorias(navegador)
+        clicar_seletor_categorias(navegador)
 
     return lista_empresas
 

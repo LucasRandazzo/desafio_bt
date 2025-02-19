@@ -3,7 +3,8 @@
 Esse projeto realiza uma raspagem de dados para extrair dados das melhores e piores empresas do Reclame Aqui no ramo da moda.
 
 ## Funcionalidades
-- **Definir Quantidade de Categorias:** Usuário define no momento da execução a quantidade de categorias do ramo da moda a serem analisadas.
+- **Definir Quantidade de Categorias:**
+  - Usuário define no momento da execução a quantidade de categorias do ramo da moda a serem analisadas.
 - **Extraçao de dados:**
   - Navega até a página do Reclame Aqui 
   - Extrai "nome", "categoria" e "url" das melhores e piores empresas

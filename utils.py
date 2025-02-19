@@ -21,9 +21,10 @@ def iniciar_navegador():
     navegador.maximize_window()
     return navegador
 
-def clicar_seletor_categorias(navegador):
-    botao_selecionar_categoria = navegador.find_element(By.CSS_SELECTOR, ".text-steel.text-sm.py-4.w-full.border-none.focus\\:outline-none.cursor-pointer")
+def clicar_seletor_categorias(espera):
+    botao_selecionar_categoria = espera.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".text-steel.text-sm.py-4.w-full.border-none.focus\\:outline-none.cursor-pointer")))
     botao_selecionar_categoria.click()
+
 
 def validar_total_categorias(valor):
     valor = int(valor)
@@ -38,14 +39,14 @@ def obter_total_categorias():
     args = parser.parse_args()
     return args.total_categorias
 
-def coletar_dados_empresas_inicial(navegador, total_categorias):
+def coletar_dados_empresas_inicial(navegador, espera, total_categorias):
     lista_empresas = []
-    espera = WebDriverWait(navegador, 3)
+    
 
-    botao_piores = navegador.find_element(By.CSS_SELECTOR, "[data-testid='tab-worst']")
-    botao_melhores = navegador.find_element(By.CSS_SELECTOR, "[data-testid='tab-best']")
+    botao_piores = espera.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "[data-testid='tab-worst']")))
+    botao_melhores = espera.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "[data-testid='tab-best']")))
 
-    clicar_seletor_categorias(navegador)
+    clicar_seletor_categorias(espera)
 
     for i in range(total_categorias):
         lista_categoria_moda = navegador.find_elements(By.XPATH, "//span[@title='Moda']/following-sibling::ul[1]/li")
@@ -95,7 +96,7 @@ def coletar_dados_empresas_inicial(navegador, total_categorias):
                 if k == len(ranking_piores) - 1:
                     botao_melhores.click()
 
-        clicar_seletor_categorias(navegador)
+        clicar_seletor_categorias(espera)
 
     return lista_empresas
 

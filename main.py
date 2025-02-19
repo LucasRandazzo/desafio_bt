@@ -1,4 +1,5 @@
 import pandas as pd
+from selenium.webdriver.support.ui import WebDriverWait
 from utils import (iniciar_navegador, 
                    coletar_dados_empresas_inicial, 
                    coletar_dados_empresas_final, 
@@ -11,9 +12,11 @@ def main():
         'Categoria', 'Empresa', 'Reclamacoes Respondidas', 'Nota do Consumidor','Voltariam a Fazer Negocio', 'Indice de Solucao'])
     navegador = iniciar_navegador()
     navegador.get("https://www.reclameaqui.com.br/")
+    espera = WebDriverWait(navegador, 3)
+    
     
 
-    lista_empresas = coletar_dados_empresas_inicial(navegador, total_categorias)
+    lista_empresas = coletar_dados_empresas_inicial(navegador, espera, total_categorias)
     navegador.close()
 
     lista_empresas = coletar_dados_empresas_final(lista_empresas)

@@ -53,11 +53,11 @@ def coletar_dados_empresas_inicial(navegador, espera, total_categorias):
         categoria_atual = lista_categoria_moda[i]
         espera.until(EC.visibility_of(categoria_atual))
         botao_categoria = categoria_atual.find_element(By.TAG_NAME, "button")
+        categoria_nome = botao_categoria.text
         espera.until(EC.element_to_be_clickable(botao_categoria))
         navegador.execute_script("arguments[0].scrollIntoView({block: 'center'})", botao_categoria)
         
         botao_categoria.click()
-        categoria_nome = botao_categoria.text
 
         try:
             ranking_melhores = espera.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".list.svelte-lzrvt6 a")))

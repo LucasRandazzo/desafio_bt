@@ -14,8 +14,6 @@ def main():
     navegador.get("https://www.reclameaqui.com.br/")
     espera = WebDriverWait(navegador, 3)
     
-    
-
     lista_empresas = coletar_dados_empresas_inicial(navegador, espera, total_categorias)
     navegador.close()
 

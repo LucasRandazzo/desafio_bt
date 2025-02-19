@@ -1,4 +1,4 @@
-# Desafio Blue Tape
+# Desafio Bluetape
 
 Esse projeto realiza uma raspagem de dados para extrair dados das melhores e piores empresas do Reclame Aqui no ramo da moda.
 

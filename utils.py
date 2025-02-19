@@ -4,6 +4,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 import pandas as pd
 import argparse
 import pandas as pd
@@ -13,7 +15,9 @@ from empresa import Empresa
 
 
 def iniciar_navegador():
-    navegador = webdriver.Chrome()
+    options = Options()
+    options.page_load_strategy = 'eager'
+    navegador = webdriver.Chrome(service=Service(), options=options)
     navegador.maximize_window()
     return navegador
 
@@ -97,7 +101,7 @@ def coletar_dados_empresas_inicial(navegador, total_categorias):
 
 def coletar_dados_empresas_final(lista_empresas):
     for idx, empresa in enumerate(lista_empresas):
-        navegador = webdriver.Chrome()
+        navegador = iniciar_navegador()
         navegador.get(empresa.url)
         espera = WebDriverWait(navegador, 3)
         dados_necessarios = espera.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".go2549335548 strong")))

@@ -1,9 +1,10 @@
-# Desafio Blue Tape
+# Desafio Bluetape
 
 Esse projeto realiza uma raspagem de dados para extrair dados das melhores e piores empresas do Reclame Aqui no ramo da moda.
 
 ## Funcionalidades
-- **Definir Quantidade de Categorias:** Usuário define no momento da execução a quantidade de categorias do ramo da moda a serem analisadas.
+- **Definir Quantidade de Categorias:**
+  - Usuário define no momento da execução a quantidade de categorias do ramo da moda a serem analisadas.
 - **Extraçao de dados:**
   - Navega até a página do Reclame Aqui 
   - Extrai "nome", "categoria" e "url" das melhores e piores empresas
@@ -12,7 +13,17 @@ Esse projeto realiza uma raspagem de dados para extrair dados das melhores e pio
 -  **Exportação:**
    - Gera um arquivo `dados_empresas.xlsx` com as informações coletadas.
 
-# Resultados
+## Resultados
+### Uma Categoria Analisada (Default)
+
+![planilha1](imgs/planilha1.PNG)
+
+### 16 Categorias Analisadas (Máximo)
+![planilha2](imgs/planilha2.PNG)
+![planilha3](imgs/planilha3.PNG)
+![planilha4](imgs/planilha4.PNG)
+
+
 
 ## Desenvolvimento e Tecnologias
 - [Selenium](https://selenium-python.readthedocs.io/)

@@ -8,8 +8,6 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 import pandas as pd
 import argparse
-import pandas as pd
-from selenium import webdriver
 from empresa import Empresa
 
 
